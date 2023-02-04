@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/bootstrap website/img/logo.png">
+    <title>Nike Jordans | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/bootstrap website/index.html" target="_self"> <img src="/bootstrap website/img/logo.png" alt="Logo" width="45">  Jordans</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/bootstrap website/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/bootstrap website/about.html" target="_blank">About</a>
+            </li>
+            <li class="nav-item  dropdown">
+              <a
+                class="nav-link dropdown-toggle "
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mens
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                <li><a class="dropdown-item" href="#">Top</a></li>
+                <li></li>
+                <li>
+                  <a class="dropdown-item" href="#">Trousers</a>
+                </li>
+              </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/bootstrap website/contact.html" target="_blank">Contact us</a>
+              </li>
+            </li>
+            
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- modal -->
+
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Log into Nike</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+      <!-- email and password -->
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- signup form -->
+
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Eman" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Tahir" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="email"  class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+    
+<h5>Eman Tahir</h5>
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-dark">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/jpg/max-burchill-jc39XzXy8ck-unsplash.jpg"  class="d-block w-100" alt="chicago">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Nike Air Jordans Max burchill</h2>
+            <p class=" fs-5 fw-bolder">Sleek as an Italian sports car,this sneaker offers ankle mobilty,broke-in <br> comfort, and heel lockdown for high-speed perfomance.</p>
+            <button class="btn btn-primary">New Release</button>
+            <button class="btn btn-success">Shop</button>
+            <button class="btn btn-danger">Jordan Basketball</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/jpg/taylor-smith-aDZ5YIuedQg-unsplash crp.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Nike Air Jordans Taylor Smith chicago</h2>
+            <p class=" fs-5 fw-bolder">Sleek as an Italian sports car,this sneaker offers ankle mobilty,broke-in <br>comfort, and heel lockdown for high-speed perfomance.</p>
+            <button class="btn btn-primary">New Release</button>
+            <button class="btn btn-success">Shop</button>
+            <button class="btn btn-danger">Jordan Basketball</button>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="img/jpg/junior-samson-kWpBUh2bdwE-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Nike Air Jordans Juniour Samson</h2>
+            <p class=" text-danger-emphasis fs-5 fw-bolder">Sleek as an Italian sports car,this sneaker offers ankle mobilty,broke-in <br>comfort, and heel lockdown for high-speed perfomance.</p>
+            <button class="btn btn-primary">New Release</button>
+            <button class="btn btn-success">Shop</button>
+            <button class="btn btn-danger">Jordan Basketball</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Blogs post -->
+    <div class="container my-4"><div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Coaching</strong>
+            <h3 class="mb-0">Trained Podcast: Find Authenticity With Fabian Domenech</h3>
+            <div class="mb-1 text-muted">January 4, 2023</div>
+            <p class="card-text mb-auto">Nike yoga teacher Fabian Domenech has taught all over the world. Hear what he’s learned about himself and his practice along the way..</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+           <img class="bd-placeholder-img" width="200" height="250" src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1487,c_limit/1792c5f5-20c6-4aa0-adcd-52bfa0b22a21/nike-yoga-teacher-fabian-domenech-on-being-your-true-self.jpg" alt="Danilo shoes">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Department of Nike Archives</strong>
+            <h3 class="mb-0">Never Done Skateboarding</h3>
+            <div class="mb-1 text-muted">December 30, 2022 </div>
+            <p class="mb-auto card-text">Ah, twenty years of Nike SB. What started off as a big brand on the outskirts of an insular movement turned into a welcome champion or the sport, pushing the culture and footwear innovation forward like only Nike can. But the SB story is full of twists, turns, sends, and bails.
+
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1487,c_limit/c18f10b4-9414-4b2d-8d8f-9c719ea268e7/never-done-skateboarding.jpg" alt="Danilo shoes">
+            
+          </div>
+        </div>
+      </div>
+    </div></div>
+    
+    <!-- Headings -->
+    <!-- AJ Chicago -->
+    <div class="container"><div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/bootstrap website/img/Air Jordan 1 High OG Chicago Reimagined Lost and Found DZ5485-612 In Hand Now.jpeg" alt="Chicago">
+        
+        <h2 class="fw-normal">Nike Air Chicago</h2>
+        <p>The AJ1 "Chicago" was inspired by the high top Air Jordan 1 original colorway, first released in 1985. The shoe harkens back to a time when shoe boxes were often lost in inventory stockrooms, only to be found again years later Celebrating the sneaker's 35th Anniversary, the collaboration was an attempt to bridge the world</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <!-- Aj Dior  -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/bootstrap website/img/Dior x AJ1.jpeg" alt="Dior AJ">
+        <h2 class="fw-normal">Dior x AJ 1</h2>
+        <p>Made in Italy entirely of Dior-approved leather, the shoe was designed to be, in Jones' own words, the “most luxurious Air Jordan 1 ever.” Celebrating the sneaker's 35th Anniversary, the collaboration was an attempt to bridge the world's of high-fashion and street culture, and create a silhouette that embodied both.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <!-- Travis scott -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/bootstrap website/img/Travis Scott x Nike Air Jordan 1 Retro High OG“Cactus Jack”.jpeg" alt="AJ Travis scott">
+        <h2 class="fw-normal">AJ Travis Scott</h2>
+        <p>When did Travis Scott and Nike start working together? The brand and artist started working together after fans were gifted the Travis Scott x Air Jordan 4 Retro 'Cactus Jack' shoes. The name references both the record label that produced Astroworld, as well as the football team of Scott's childhoo</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div></div>
+
+    <!-- footer -->
+    <hr>
+    <footer class="container">
+      <p class="float-end"><a href="/bootstrap website/index.html">Back to top</a></p>
+      <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    
+    <!-- Button -->
+    <!-- <div class="d-grid gap-2">
+    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        
+        
+        
+        <div class="btn-group " role="group">
+            
+          <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+    </div>
+</div> -->
+
+<!-- card -->
+
+<!-- <div class="card " style="width: 70rem;">
+    <img src="/bootstrap website/img/chicago.png" class="card-img-top" alt="Chicago">
+    <div class="card-body">
+      <h5 class="card-title">Nike Air Jordans Chicago 80's</h5>
+      <p class="card-text">The AJ1 "Chicago" was inspired by the high top Air Jordan 1 original colorway, first released in 1985. The shoe harkens back to a time when shoe boxes were often lost in inventory stockrooms, only to be found again years later.</p>
+        
+    </div>
+  </div> -->
+        
+    
+
+    <!-- bootstrapjs link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
